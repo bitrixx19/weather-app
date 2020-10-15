@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="src/styles.css" />
+  <title>🌡️ Weather Wireframe</title>
+   </head>
+ <body>
+   <div id="bootstrap">
+   <div class="container">
+     
+  <h4 class= "calendar">FRIDAY 21st Aug </h4>
+  <h5 class="time"> 12:00pm </h5>  
+     <form class="search-form" id="search-form">
+     <div class="input-group mb-3 mx-auto">
+      <input type="search" placeholder="City Search"" autofocus="on"
+      autocomplete="off" id="search-text-input" class="form-control shadow-sm"
+      />
+    
+    
+      <input
+        type="submit"
+        value="Search"
+        class="form-control btn btn-primary shadow-sm"
+      />
+      <input
+                type="submit"
+                value="Current Location"
+                class="button-current-geo"
+                id="button-current-geo"
+              />
+    
+  </div>
+</form>
+              
+     <header>
+       <h1 id= "city-name" >GRANADA, Spain</h1>
+       <h2><span id="description"> </span></h2>
+     </header>
+     
+     <div class="row current-temp">
+       <div class="col-4 emoji my-auto">
+         <p>🌞</p>
+       </div>
+       <div class="col-4 my-auto degrees">
+         <p>
+            <span id="temp-currently">
+                27
+            </span>
+            
+          <span id="celsius">
+              <a href="">
+                  °C
+              </a>
+           </span>
+          |
+          <span id="fahrenheit"> <a href="">
+              °F
+          </a>
+              
+          </span>       
+         </p>
+       </div>
+       <div class="col-4 my-auto description">
+         <p>
+           Humidity:<span id="humidity"> 0 </span>%  </br>
+           Wind: <span id="wind"> </span>mph </br>
+           
+           
+ 
+         </p>
+       </div>
+     </div>
+     
+     <div class="card mb-3">
+       NEXT 5 DAYS
+     </div>
+     <div class="row future-temp">
+       <div class="col">
+         <div class="card mb-3" style="max-width: 18rem;">
+           <p class="card-day">FRIDAY</p>
+           <p class="card-emoji">☀️</p>
+           <p class= "card-temp"> 25°/ 18°
+           </br>
+           0% 4mph
+           </p>
+         </div>
+       </div>
+       <div class="col">
+         <div class="card mb-3" style="max-width: 18rem;">
+           <p class="card-day">SATURDAY</p>
+           <p class="card-emoji">☀️</p>
+           <p class="card-temp">38°/19°
+             </br>
+             0% 1mph
+           </p>
+         </div>
+       </div>
+       <div class="col">
+         <div class="card mb-3" style="max-width: 18rem;">
+           <p class="card-day">SUNDAY</p>
+           <p class="card-emoji">⛅</p>
+           <p class="card-temp">37°/17°
+             </br>
+             0% 2mph
+           </p>
+         </div>
+       </div>
+       <div class="col">
+         <div class="card mb-3" style="max-width: 18rem;">
+           <p class="card-day">MONDAY</p>
+           <p class="card-emoji">☀️</p>
+           <p class="card-temp">36°/17°
+             </br>
+             0% 1mph
+           </p>
+         </div>
+       </div>
+       <div class="col">
+         <div class="card mb-3" style="max-width: 18rem;">
+           <p class="card-day">TUESDAY</p>
+           <p class="card-emoji">☀️</p>
+           <p class="card-temp">37°/18°
+             </br>
+             0% 3mph
+           </p>
+         </div>
+       </div>
+     </div>
+     </div>
+     
+       <div class="col">
+     <div class="card mb-3">
+       <strong>
+     🌅SUNRISE 07:36      🌇SUNSET 20:58
+ </strong>
+     </div>
+     </div>
+     </div>
+     </div>
+   </div>
+ 
+ </div>
+ </div>
+ </div> 
+</div>
+</div>
+</div>
+ <script src="src/index.js"></script>
+ 
+ </body>
+ </html>
+ 
